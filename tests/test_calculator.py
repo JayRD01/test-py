@@ -1,5 +1,5 @@
 import unittest
-from src.calculator import sum, subtract
+from src.calculator import sum, subtract, multiplay, divide
 
 
 class CalculatorTests(unittest.TestCase):
@@ -10,6 +10,13 @@ class CalculatorTests(unittest.TestCase):
     def test_resta(self):
         assert subtract
 
+    def test_multiplicacion(self):
+        assert multiplay(5, 5) == 25
+
+    def test_division(self):
+        result = divide(10, 2)
+        expected = 5
+        assert result == expected
 """
 Comando: python -m unittest discover -s <ruta>
 

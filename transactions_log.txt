@@ -1,0 +1,15 @@
+Cuenta creada 
+Deposited 500. New balance: 1500 
+Cuenta creada 
+Cuenta creada 
+Withdrew 500. New balance: 500 
+Cuenta creada 
+Deposited 500. New balance: 1500 
+Cuenta creada 
+Cuenta creada 
+Withdrew 500. New balance: 500 
+Cuenta creada 
+Deposited 500. New balance: 1500 
+Cuenta creada 
+Cuenta creada 
+Withdrew 500. New balance: 500 
