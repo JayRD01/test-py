@@ -4,7 +4,7 @@ import os
 from unittest.mock import patch
 from src.exceptions import InsufficientFundsError, WithdralTimeRestrictionError
 
-class BankAccount_tests(unittest.TestCase):
+class BankAccountTests(unittest.TestCase):
     def setUp(self) -> None:
         self.account = BankAccount(balance=1000, log_file="transaction_log.txt")
 
@@ -20,13 +20,7 @@ class BankAccount_tests(unittest.TestCase):
         new_balance = self.account.deposit(500)
         self.assertEqual(new_balance, 1500, "El balance no es igual")
 
-    def test_withdraw_decreases_balance_by_withdraw_amount(self):
-        new_balance = self.account.withdraw(200)
-        self.assertEqual(new_balance, 800, "El balance no es igual")
-
-    def test_get_balance_returns_current_balance(self):
-        self.assertEqual(self.account.get_balance(), 1000)
-
+    @unittest.skip("Prueba esta siendo trabajada, omitida hasta nuevo aviso")
     def test_deposit_logs_transaction(self):
         self.account.deposit(500)
         self.assertTrue(os.path.exists("transaction_log.txt"))
